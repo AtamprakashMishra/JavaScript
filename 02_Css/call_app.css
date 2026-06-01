@@ -1,0 +1,427 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+  min-height: 100vh;
+  background: #f5f5f5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.note-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  position: relative;
+}
+
+/* =========================
+   LEFT ICON BUTTONS
+========================= */
+
+.left-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.left-icons button {
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 18px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.left-icons button:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   RIGHT COLOR DOTS
+========================= */
+
+.right-colors {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.black {
+  background: #000;
+}
+
+.purple {
+  background: #a855f7;
+}
+
+.orange {
+  background: #fb923c;
+}
+
+.teal {
+  background: #14b8a6;
+}
+
+/* =========================
+   STACK
+========================= */
+
+.stack {
+  position: relative;
+
+  width: 320px;
+  height: 240px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 20px;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+
+  transition: all 0.35s ease;
+}
+
+/* =========================
+   AVATAR
+========================= */
+
+.avatar {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 14px;
+
+  border: 2px solid #eee;
+}
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.card h2 {
+  font-size: 18px;
+  font-weight: 600;
+
+  color: #111;
+
+  margin-bottom: 14px;
+}
+
+/* =========================
+   INFO ROW
+========================= */
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  color: #555;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 18px;
+}
+
+/* =========================
+   CALL BUTTON
+========================= */
+
+button.call {
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 100px;
+
+  background: #111;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+button.call:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MESSAGE BUTTON
+========================= */
+
+button.msg {
+  border: none;
+
+  padding: 10px 16px;
+
+  border-radius: 100px;
+
+  background: #ececec;
+
+  color: #111;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+button.msg:hover {
+  background: #dddddd;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.form-container {
+  display: none;
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 30rem;
+
+  background: white;
+
+  padding: 24px;
+
+  border-radius: 22px;
+
+  z-index: 9999;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+/* =========================
+   FORM HEADING
+========================= */
+
+.form-container h2 {
+  font-size: 22px;
+  font-weight: 700;
+
+  color: #111;
+
+  margin-bottom: 10px;
+}
+
+/* =========================
+   LABELS
+========================= */
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #333;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input[type="text"] {
+  width: 100%;
+
+  margin-top: 6px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #ddd;
+  border-radius: 14px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #999;
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn {
+  width: 100%;
+
+  margin-top: 10px;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 100px;
+
+  background: #111;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #000;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.closeForm {
+  width: 100%;
+
+  margin-top: 10px;
+
+  border: none;
+
+  padding: 14px;
+
+  border-radius: 100px;
+
+  background: #ff4a4a;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.closeForm:hover {
+  background: #ff2f2f;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 600px) {
+  .note-container {
+    flex-direction: column;
+  }
+
+  .stack {
+    width: 90vw;
+  }
+
+  .form-container {
+    width: 92vw;
+  }
+
+  .left-icons,
+  .right-colors {
+    flex-direction: row;
+  }
+}

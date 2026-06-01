@@ -1,0 +1,199 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Call Card Stack App</title>
+
+    <!-- Remix Icons -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" />
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="../02_Css/call_app.css" />
+</head>
+
+<body>
+
+    <!-- =========================
+         FORM POPUP
+    ========================== -->
+
+    <div class="form-container">
+
+        <h2>Create New Call</h2>
+
+        <form>
+
+            <!-- IMAGE URL -->
+
+            <div class="input-group">
+                <label for="imageUrl">Image URL</label>
+
+                <input
+                    id="imageUrl"
+                    type="text"
+                    placeholder="https://example.com/photo.jpg"
+                    required />
+            </div>
+
+            <!-- FULL NAME -->
+
+            <div class="input-group">
+                <label for="fullName">Full Name</label>
+
+                <input
+                    id="fullName"
+                    type="text"
+                    placeholder="Enter full name"
+                    required />
+            </div>
+
+            <!-- HOME TOWN -->
+
+            <div class="input-group">
+                <label for="homeTown">Home Town</label>
+
+                <input
+                    id="homeTown"
+                    type="text"
+                    placeholder="Enter home town"
+                    required />
+            </div>
+
+            <!-- PURPOSE -->
+
+            <div class="input-group">
+                <label for="purpose">Purpose</label>
+
+                <input
+                    id="purpose"
+                    type="text"
+                    placeholder="e.g., Quick appointment note"
+                    required />
+            </div>
+
+            <!-- CATEGORY -->
+
+            <div class="input-group">
+
+                <label>Category</label>
+
+                <div class="category-wrapper">
+
+                    <label class="tag-checkbox">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="Emergency"
+                            required />
+
+                        <span>Emergency</span>
+                    </label>
+
+                    <label class="tag-checkbox">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="Important" />
+
+                        <span>Important</span>
+                    </label>
+
+                    <label class="tag-checkbox">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="Urgent" />
+
+                        <span>Urgent</span>
+                    </label>
+
+                    <label class="tag-checkbox">
+                        <input
+                            type="radio"
+                            name="category"
+                            value="No Rush" />
+
+                        <span>No Rush</span>
+                    </label>
+
+                </div>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+
+            <button type="submit" class="submit-btn">
+                Create Note
+            </button>
+
+        </form>
+
+        <!-- CLOSE BUTTON -->
+
+        <button class="closeForm">
+            Close
+        </button>
+
+    </div>
+
+    <!-- =========================
+         MAIN CONTAINER
+    ========================== -->
+
+    <div class="note-container">
+
+        <!-- LEFT SIDE BUTTONS -->
+
+        <div class="left-icons">
+
+            <button id="add-note">
+                <i class="ri-add-line"></i>
+            </button>
+
+            <button id="upBtn">
+                <i class="ri-arrow-up-line"></i>
+            </button>
+
+            <button id="downBtn">
+                <i class="ri-arrow-down-line"></i>
+            </button>
+
+        </div>
+
+        <!-- CARD STACK -->
+
+        <div class="stack">
+
+            <!-- Dynamic cards will come here -->
+
+        </div>
+
+        <!-- RIGHT COLOR DOTS -->
+
+        <div class="right-colors">
+
+            <span class="dot black"></span>
+
+            <span class="dot purple"></span>
+
+            <span class="dot orange"></span>
+
+            <span class="dot teal"></span>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         JAVASCRIPT FILE
+    ========================== -->
+
+    <script src="../03_JavaScript/call_app.js"></script>
+
+</body>
+
+</html>
