@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//02_Css/calculator.css">
+ </head>
+ <body>
+    <div class="calculator">
+        <h1>js calculator</h1>
+
+    <input type="text" id="screen" readonly>
+    <div class="buttons">
+        <button onclick="addValue(`1`)">1</button>
+        <button onclick="addValue(`2`)">2</button>
+        <button onclick="addValue(`3`)">3</button>
+        <button onclick="addValue(`+`)">+</button>
+
+        <button onclick="addValue(`4`)">4</button>
+        <button onclick="addValue(`5`)">5</button>
+        <button onclick="addValue(`6`)">6</button>
+        <button onclick="addValue(`-`)">-</button>
+
+        <button onclick="addValue(`7`)">7</button>
+        <button onclick="addValue(`8`)">8</button>
+        <button onclick="addValue(`9`)">9</button>
+        <button onclick="addValue(`*`)">*</button>
+
+        <button onclick="addValue(`0`)">0</button>
+        <button onclick="addValue(`/`)">/</button>
+
+        <button onclick="calculate()">=</button>
+
+
+        <button class="cler-btn" onclick="clearScreen()">C</button>
+
+        <button onclick="backspace()">⌫</button>
+<button onclick="squareRoot()">√</button>
+<button onclick="showHistory()">H</button>
+
+<div id="history"></div>
+    </div>
+</div>
+    <script src="..//03_JavaScript/calculator.js"></script>
+ </body>
+ </html>

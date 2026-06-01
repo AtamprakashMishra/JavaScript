@@ -1,0 +1,48 @@
+ body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+ }
+ .calculator{
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ #screen{
+    width: 300px;
+    height: 50px;
+    margin: 20px auto;
+    margin: 20px;
+    font-size: 30px;
+    border-radius: 50px;
+    border: 5px solid rgb(9, 9, 35);
+ }
+ .buttons{
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 70px;
+    height: 60px;
+    margin: 5px;
+    font-size: 25px;
+
+    button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+ }
+ .cler-btn{
+    background-color: red;
+    color: white;
+    
+ }
